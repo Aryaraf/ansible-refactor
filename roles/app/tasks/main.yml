@@ -1,0 +1,9 @@
+- name: Make a directory for application
+  ansible.builtin.file:
+    path: /opt/myapp
+    state: directory
+
+- name: Copy fle application
+  ansible.builtin.copy:
+    src: files/app.py
+    dest: /opt/myapp/app.py

@@ -1,0 +1,9 @@
+- name: Deploy Web Stack with Modular Roles
+  hosts: local
+  become: true
+
+  roles:
+    - packages
+    - db 
+    - app
+    - nginx

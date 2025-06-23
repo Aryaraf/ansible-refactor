@@ -1,0 +1,5 @@
+- name: Install MariaDB Server 
+  ansible.builtin.apt:
+    name:  mariadb-server
+    state: present 
+    update_cache: yes
