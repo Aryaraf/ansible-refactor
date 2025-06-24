@@ -1,6 +1,8 @@
 - name: Deploy Web Stack with Modular Roles
   hosts: local
   become: true
+  vars_files:
+    - group_vars/all/secrets.yml
 
   roles:
     - packages
