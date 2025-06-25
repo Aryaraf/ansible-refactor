@@ -13,4 +13,4 @@
 
 - name:  Set MariaDB root password 
   command: mysqladmin -u root password "{{ db_root_password }}"
-  ignore_errors: yes 
+  ignore_errors: true 

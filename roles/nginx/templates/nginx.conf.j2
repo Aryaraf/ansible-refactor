@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name {{ domain_name | default("localhost") }};
+
+    {% if use_static %}
+    location / {
+        root /var/www/html;
+        index index.html index.htm;
+    }
+    {% endif %}
+}

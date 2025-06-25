@@ -11,8 +11,8 @@
 *.vault
 
 .env
-.secret*
-secret.yml
+group_vars/*.yml 
+!group_vars/secrets.yml 
 
 __pycache__/
 .cache/
